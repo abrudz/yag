@@ -1,4 +1,4 @@
-# Primitives proposed to fill core language gaps in Dyalog APL
+# Language recommendations by Dyalog's internal "Y̲oung A̲PL"ers G̲roup
 
 In Dyalog 18.2 or higher:
 `]get /path/to/repo -u`
