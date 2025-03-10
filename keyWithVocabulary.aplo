@@ -1,0 +1,15 @@
+Ⓚ←{ ⍝ ⌸ allowing operand to be vocabulary (and then using {⊂⍵} as internal operand)
+     ⍺←⊢  ⍝
+     3=40 ⎕ATX'⍺⍺':⍺ ⍺⍺⌸⍵  ⍝ fn operand: current definition
+     3=40 ⎕ATX'⍺':⍵ ∇⍳≢⍵   ⍝ monadic
+     
+     ⎕IO←1
+     uvoc←∪⍺⍺
+     mask←(≢uvoc)≥uvoc⍳⍺  ⍝ high-rank ∊
+     keys←uvoc⍪mask⌿⍺
+     values←mask⌿⍵
+     values⍴⍨←(≢uvoc)+@1⍴values  ⍝ append filler values while guarding against NONCE ERRORs
+     values⊖⍨←-(≢uvoc)           ⍝ move them to front
+
+     (1↓¨keys{⊂⍵}⌸values)[uvoc⍳⍺⍺]
+}
