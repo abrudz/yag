@@ -25,7 +25,7 @@ This doesn't work because we don't know the order of appearance of the bases. We
 ```
 Using Key with vocabulary:
 ```apl
-      ≢¨'AGCT'Ⓚ dna
+      ≢¨'AGCT'⌸dna
 3 6 1 2
 ```
 ## Choose a subset of keys for which to return results
