@@ -44,7 +44,7 @@ How do we get letter counts for just the vowels? We'd have to filter the text (e
 ```
 Using Key with vocabulary:
 ```apl
-      ≢¨'aeiou'⌸text
+      ≢¨'aeiou'Ⓚtext
 2 5 1 2 1
 ```
 ## Include additional keys not present in the current keys
@@ -63,6 +63,6 @@ How do we ensure all vowels are accounted for? We'd have to either amend the tex
 ```
 Using Key with vocabulary:
 ```apl
-      ≢¨'aeiou'⌸text
+      ≢¨'aeiou'Ⓚtext
 3 5 2 0 0
 ```
